@@ -1,0 +1,66 @@
+{
+	"name": "directus-extension-inline-form-interface",
+	"description": "An inline form interface for Directus",
+	"icon": "extension",
+	"version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface/issues"
+  },
+  "homepage": "https://github.com/hanneskuettner/directus-extension-inline-form-interface",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-interface"
+	],
+	"directus:extension": {
+		"type": "interface",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^9.26.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+    "lint": "eslint .",
+    "release": "semantic-release"
+	},
+	"devDependencies": {
+		"@directus/composables": "^9.26.0",
+		"@directus/exceptions": "^9.26.0",
+		"@directus/types": "^9.26.0",
+		"@directus/utils": "^9.26.0",
+		"@rollup/plugin-alias": "^5.0.0",
+		"@rollup/plugin-node-resolve": "^15.0.2",
+		"@rollup/plugin-yaml": "^4.0.1",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/github": "^8.0.7",
+		"@types/lodash-es": "^4.17.7",
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"@typescript-eslint/parser": "^5.57.1",
+		"eslint": "^8.39.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-vue": "^9.10.0",
+		"knex-schema-inspector": "^3.0.1",
+		"lodash-es": "^4.17.21",
+		"prettier": "^2.8.7",
+		"rollup-plugin-copy": "^3.4.0",
+		"sass": "^1.60.0",
+		"semantic-release": "^21.0.2",
+		"typescript": "^5.0.3"
+	},
+	"peerDependencies": {
+		"@directus/extensions-sdk": "^9.26.0",
+		"vue": "^3.2.47",
+		"vue-i18n": "^9.2.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"packageManager": "pnpm@8.4.0"
+}

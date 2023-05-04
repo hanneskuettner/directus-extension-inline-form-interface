@@ -1,0 +1,4 @@
+interfaces:
+  inline-form-m2o:
+    no-read-permission: You do not have permission to read this record.
+    no-update-permission: You do not have permission to update this record.
