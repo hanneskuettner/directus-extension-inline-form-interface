@@ -3,14 +3,14 @@
 	"description": "An inline form interface for Directus",
 	"icon": "extension",
 	"version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface/issues"
-  },
-  "homepage": "https://github.com/hanneskuettner/directus-extension-inline-form-interface",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface/issues"
+	},
+	"homepage": "https://github.com/hanneskuettner/directus-extension-inline-form-interface",
 	"keywords": [
 		"directus",
 		"directus-extension",
@@ -26,8 +26,8 @@
 		"build": "directus-extension build",
 		"dev": "directus-extension build -w --no-minify",
 		"link": "directus-extension link",
-    "lint": "eslint .",
-    "release": "semantic-release"
+		"lint": "eslint .",
+		"release": "semantic-release"
 	},
 	"devDependencies": {
 		"@directus/composables": "^9.26.0",
@@ -38,7 +38,7 @@
 		"@rollup/plugin-node-resolve": "^15.0.2",
 		"@rollup/plugin-yaml": "^4.0.1",
 		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/github": "^8.0.7",
+		"@semantic-release/git": "^10.0.1",
 		"@types/lodash-es": "^4.17.7",
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
 		"@typescript-eslint/parser": "^5.57.1",
