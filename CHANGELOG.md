@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/hanneskuettner/directus-extension-inline-form-interface/compare/v1.0.0...v1.0.1) (2023-05-04)
+
+
+### Bug Fixes
+
+* only include dist in package contents ([8cb9541](https://github.com/hanneskuettner/directus-extension-inline-form-interface/commit/8cb9541e9d1b2571d00324d53e92ac34cf8ecbcb))
+
 # 1.0.0 (2023-05-04)
 
 

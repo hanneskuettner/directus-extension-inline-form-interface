@@ -2,7 +2,7 @@
 	"name": "directus-extension-inline-form-interface",
 	"description": "An inline form interface for Directus",
 	"icon": "extension",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
@@ -22,10 +22,10 @@
 		"source": "src/index.ts",
 		"host": "^9.26.0"
 	},
-  "files": [
-    "dist"
-  ],
-  "scripts": {
+	"files": [
+		"dist"
+	],
+	"scripts": {
 		"build": "directus-extension build",
 		"dev": "directus-extension build -w --no-minify",
 		"link": "directus-extension link",
