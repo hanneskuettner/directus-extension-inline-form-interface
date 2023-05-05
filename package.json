@@ -3,7 +3,8 @@
 	"description": "An inline form interface for Directus",
 	"icon": "extension",
 	"version": "1.0.1",
-	"repository": {
+  "license": "MIT",
+  "repository": {
 		"type": "git",
 		"url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
 	},
