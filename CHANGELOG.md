@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hanneskuettner/directus-extension-inline-form-interface/compare/v1.0.1...v1.1.0) (2023-05-09)
+
+
+### Features
+
+* **license:** change license to GPL-3.0 ([96def50](https://github.com/hanneskuettner/directus-extension-inline-form-interface/commit/96def50cad45484f1334e25b0868bc82fc42cc9d))
+
 ## [1.0.1](https://github.com/hanneskuettner/directus-extension-inline-form-interface/compare/v1.0.0...v1.0.1) (2023-05-04)
 
 
