@@ -17,7 +17,7 @@ export function isAllowed(
 	const permissions = permissionsStore.permissions;
 
 	const permissionInfo = permissions.find(
-		(permission) => permission.action === action && permission.collection === collection
+		(permission: Permission) => permission.action === action && permission.collection === collection
 	);
 
 	if (!permissionInfo) return false;

@@ -1,67 +1,75 @@
 {
-	"name": "directus-extension-inline-form-interface",
-	"description": "An inline form interface for Directus",
-	"icon": "extension",
-	"version": "1.2.0",
-	"license": "GPL-3.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
-	},
-	"bugs": {
-		"url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface/issues"
-	},
-	"homepage": "https://github.com/hanneskuettner/directus-extension-inline-form-interface",
-	"keywords": [
-		"directus",
-		"directus-extension",
-		"directus-custom-interface"
-	],
-	"directus:extension": {
-		"type": "interface",
-		"path": "dist/index.js",
-		"source": "src/index.ts",
-		"host": "^10.9.0"
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "directus-extension build",
-		"dev": "directus-extension build -w --no-minify",
-		"link": "directus-extension link",
-		"lint": "eslint .",
-		"release": "semantic-release"
-	},
-	"devDependencies": {
-		"@directus/composables": "^10.1.11",
-		"@directus/exceptions": "^10.0.3",
-		"@directus/types": "^11.0.7",
-		"@directus/utils": "^11.0.6",
-		"@rollup/plugin-alias": "^5.1.0",
-		"@rollup/plugin-node-resolve": "^15.2.3",
-		"@rollup/plugin-yaml": "^4.1.2",
-		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/git": "^10.0.1",
-		"@types/lodash-es": "^4.17.12",
-		"@typescript-eslint/eslint-plugin": "^7.1.1",
-		"@typescript-eslint/parser": "^7.1.1",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-prettier": "^5.1.3",
-		"eslint-plugin-vue": "^9.22.0",
-		"knex-schema-inspector": "^3.1.0",
-		"lodash-es": "^4.17.21",
-		"prettier": "^3.2.5",
-		"sass": "^1.71.1",
-		"semantic-release": "^23.0.2",
-		"typescript": "^5.4.2",
-		"@directus/extensions-sdk": "^11.0.1",
-		"vue": "^3.2.47",
-		"vue-i18n": "^9.2.2"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"packageManager": "pnpm@8.15.4"
+  "name": "directus-extension-inline-form-interface",
+  "description": "An inline form interface for Directus",
+  "type": "module",
+  "icon": "extension",
+  "version": "1.2.0",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanneskuettner/directus-extension-inline-form-interface/issues"
+  },
+  "homepage": "https://github.com/hanneskuettner/directus-extension-inline-form-interface",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-interface"
+  ],
+  "directus:extension": {
+    "type": "interface",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.9.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link",
+    "lint": "eslint .",
+    "release": "semantic-release",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@cmiteam/tsconfig": "workspace:*",
+    "@directus/exceptions": "^10.0.3",
+    "@directus/extensions-sdk": "^18.0.6",
+    "@directus/types": "^18.0.0",
+    "@directus/utils": "^14.0.0",
+    "@rollup/plugin-alias": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-yaml": "^5.0.0",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/git": "^11.0.1",
+    "@types/lodash": "^4.17.25",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "catalog:",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
+    "@typescript-eslint/parser": "^8.70.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-vue": "^10.11.1",
+    "knex-schema-inspector": "^3.1.0",
+    "lodash-es": "^4.18.1",
+    "prettier": "^3.9.9",
+    "sass": "^1.105.0",
+    "semantic-release": "^25.0.9",
+    "typescript": "catalog:",
+    "vue": "^3.5.43",
+    "vue-i18n": "^11.4.12",
+    "vue-tsc": "catalog:"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@vueuse/core": "^15.0.0",
+    "lodash": "^4.18.1"
+  }
 }

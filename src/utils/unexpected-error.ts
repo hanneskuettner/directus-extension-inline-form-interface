@@ -1,4 +1,4 @@
-import { APIError } from '@/types';
+import { APIError } from '../types';
 import type { useI18n } from 'vue-i18n';
 
 export function unexpectedError(error: Error | any | APIError, store: any, t: ReturnType<typeof useI18n>['t']): void {

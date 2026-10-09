@@ -1,4 +1,4 @@
-import en from '@/lang/en.yaml';
+import en from '../lang/en.js';
 import { useI18n as origI18n, UseI18nOptions } from 'vue-i18n';
 
 export function useI18n(options?: UseI18nOptions) {
